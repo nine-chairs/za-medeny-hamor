@@ -15,7 +15,7 @@ i18n
   .use(HttpApi)
   .init({
     supportedLngs: ['sk','en','de'],
-    fallbackLng: "en",
+    fallbackLng: "sk", // default language of the page
     detection: {
       order: [ 'cookie','htmlTag','localStorage', 'path', 'subdomain'],
       caches: ['cookie']

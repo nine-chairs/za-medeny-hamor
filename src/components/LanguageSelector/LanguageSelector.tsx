@@ -1,29 +1,41 @@
 import React, { useState, ChangeEvent } from 'react';
+import i18next from 'i18next';
 
-interface LanguageSelectorProps {
-  onLanguageChange: (language: string) => void;
-}
 
-const LanguageSelector: React.FC<LanguageSelectorProps> = ({ onLanguageChange }) => {
-  const [selectedLanguage, setSelectedLanguage] = useState<string>('en'); // Default language is English
+const LanguageSelector = () => {
+  const languages = [
+    {
+      code: 'sk',
+      name: 'Slovencina',
+      country_code: 'fr',
+    },
+    {
+      code: 'en',
+      name: 'English',
+      country_code: 'gb',
+    },
+    {
+      code: 'de',
+      name: 'Deutsch',
+      country_code: 'de',
+    },
+    
+  ]
 
-  const handleLanguageChange = (event: ChangeEvent<HTMLSelectElement>) => {
-    const newLanguage = event.target.value;
-    setSelectedLanguage(newLanguage);
-    onLanguageChange(newLanguage);
-  };
 
   return (
     <div>
-      <label htmlFor="languageSelect">Select a language: </label>
-      <select id="languageSelect" value={selectedLanguage} onChange={handleLanguageChange}>
-        <option value="sk">Slovencina</option>
-        <option value="en">English</option>
-        <option value="de">Deutsch</option>
-      </select>
-    </div>
-  );
-};
+    <ul>
+      {languages.map(({code, name, country_code}) => (
+        <li key={country_code}>
+          <button onClick={() => i18next.changeLanguage(code)}>
+            {name}
+          </button>
+        </li>
+      ))}
+    </ul>
+  </div>
+  )
+}
 
-export default LanguageSelector;
-
+export default LanguageSelector
