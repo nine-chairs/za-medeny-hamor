@@ -1,11 +1,11 @@
 import React from 'react'
-import { useTranslation } from "react-i18next";
+import { useTranslation } from "react-i18next"
 
 const Contact = () => {
-  const { t } = useTranslation();
+  const { t } = useTranslation()
   return (
     <div>
-        <h1>{t('title_contact')}</h1>
+      <h1>{t('title_contact')}</h1>
     </div>
   )
 }

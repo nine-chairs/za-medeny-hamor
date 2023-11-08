@@ -1,8 +1,8 @@
 import React from 'react'
-import { useTranslation } from "react-i18next";
+import { useTranslation } from "react-i18next"
 
 const Support = () => {
-    const { t } = useTranslation();
+  const { t } = useTranslation()
   return (
     <h1>{t('title_support')}</h1>
   )

@@ -1,18 +1,18 @@
 import React, { useState } from 'react'
 import { Link, NavLink } from 'react-router-dom'
-import { useTranslation } from "react-i18next";
+import { useTranslation } from "react-i18next"
 import './Navbar.css'
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false)
-  const { t } = useTranslation();
+  const { t } = useTranslation()
   return (
     <nav>
       <Link to='/' className='title'>
         za! medený hámor
       </Link>
-      <div 
-        className='menu' 
+      <div
+        className='menu'
         onClick={() => {
           setMenuOpen(!menuOpen)
         }}
@@ -29,13 +29,13 @@ const Navbar = () => {
           <NavLink to='/medeny_hamor'>{t('title_medeny_hamor')}</NavLink>
         </li>
         <li>
-        <NavLink to='/news'>{t('title_news')}</NavLink>
+          <NavLink to='/news'>{t('title_news')}</NavLink>
         </li>
         <li>
-        <NavLink to='/support'>{t('title_support')}</NavLink>
+          <NavLink to='/support'>{t('title_support')}</NavLink>
         </li>
         <li>
-        <NavLink to='/contact'>{t('title_contact')}</NavLink>
+          <NavLink to='/contact'>{t('title_contact')}</NavLink>
         </li>
       </ul>
     </nav>

@@ -1,12 +1,12 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import i18n from "i18next";
-import { initReactI18next } from "react-i18next";
-import LanguageDetector from 'i18next-browser-languagedetector';
-import HttpApi from 'i18next-http-backend';
+import React from 'react'
+import ReactDOM from 'react-dom/client'
+import i18n from "i18next"
+import { initReactI18next } from "react-i18next"
+import LanguageDetector from 'i18next-browser-languagedetector'
+import HttpApi from 'i18next-http-backend'
 
 
-import App from './App';
+import App from './App'
 import './index.css'
 
 i18n
@@ -14,24 +14,24 @@ i18n
   .use(LanguageDetector)
   .use(HttpApi)
   .init({
-    supportedLngs: ['sk','en','de'],
+    supportedLngs: ['sk', 'en', 'de'],
     fallbackLng: "sk", // default language of the page
     detection: {
-      order: [ 'cookie','htmlTag','localStorage', 'path', 'subdomain'],
+      order: ['cookie', 'htmlTag', 'localStorage', 'path', 'subdomain'],
       caches: ['cookie']
     },
     backend: {
       loadPath: '/assets/locales/{{lng}}/translation.json',
     },
-    react: {useSuspense: false},
-  });
+    react: { useSuspense: false },
+  })
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
-);
+)
 root.render(
   <React.StrictMode>
     <App />
   </React.StrictMode>
-);
+)
 
