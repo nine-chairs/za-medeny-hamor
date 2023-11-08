@@ -1,39 +1,58 @@
-import React, { useState, ChangeEvent } from 'react'
+import React, { useState, useEffect } from 'react'
 import i18next from 'i18next'
+import DropdownItem from './DropdownItem'
 
+const LanguageSelector: React.FC = () => {
+  const [isDropdownOpen, setIsDropdownOpen] = useState(false)
+  const [selectedLanguage, setSelectedLanguage] = useState(i18next.language)
 
-const LanguageSelector = () => {
   const languages = [
     {
-      code: 'sk',
-      name: 'Slovencina',
-      country_code: 'fr',
+      country_code: 'sk',
+      name: 'Slovenčina',
+      text: 'SK',
     },
     {
-      code: 'en',
+      country_code: 'en',
       name: 'English',
-      country_code: 'gb',
+      text: 'EN',
     },
     {
-      code: 'de',
-      name: 'Deutsch',
       country_code: 'de',
+      name: 'Deutsch',
+      text: 'DE',
     },
-
   ]
 
+  useEffect(() => {
+    // Find the language object in the languages array by its country_code
+    const selectedLanguageObj = languages.find((lang) => lang.country_code === i18next.language)
+    // Use the 'name' property as the selected language name
+    setSelectedLanguage(selectedLanguageObj ? selectedLanguageObj.text : '')
+  }, [i18next.language])
+
+  const handleItemClick = (language: string) => {
+    i18next.changeLanguage(language)
+    setIsDropdownOpen(false)
+  }
 
   return (
-    <div>
-      <ul>
-        {languages.map(({ code, name, country_code }) => (
-          <li key={country_code}>
-            <button onClick={() => i18next.changeLanguage(code)}>
-              {name}
-            </button>
-          </li>
-        ))}
-      </ul>
+    <div className='languageSelector'>
+      <div className='dropdownToggle' onClick={() => setIsDropdownOpen(!isDropdownOpen)}>
+        {selectedLanguage}
+      </div>
+      {isDropdownOpen && (
+        <ul className='dropdownMenu'>
+          {languages.map((lang) => (
+            <DropdownItem
+              key={lang.country_code}
+              language={lang.country_code}
+              text={lang.text}
+              onItemClick={handleItemClick}
+            />
+          ))}
+        </ul>
+      )}
     </div>
   )
 }
