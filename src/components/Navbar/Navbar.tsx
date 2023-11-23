@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import { Link, NavLink } from 'react-router-dom'
 import { useTranslation } from "react-i18next"
 import './Navbar.css'
+import LanguageSelector from '../LanguageSelector/LanguageSelector'
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false)
@@ -37,7 +38,10 @@ const Navbar = () => {
         <li>
           <NavLink to='/contact'>{t('title_contact')}</NavLink>
         </li>
+
+        <LanguageSelector />
       </ul>
+
     </nav>
   )
 }

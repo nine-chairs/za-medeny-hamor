@@ -31,6 +31,9 @@ const LanguageSelector: React.FC = () => {
     setSelectedLanguage(selectedLanguageObj ? selectedLanguageObj.text : '')
   }, [i18next.language])
 
+  // Filter out the selected language from the list of languages
+  const availableLanguages = languages.filter((lang) => lang.country_code !== i18next.language);
+
   const handleItemClick = (language: string) => {
     i18next.changeLanguage(language)
     setIsDropdownOpen(false)
@@ -43,7 +46,7 @@ const LanguageSelector: React.FC = () => {
       </div>
       {isDropdownOpen && (
         <ul className='dropdownMenu'>
-          {languages.map((lang) => (
+          {availableLanguages.map((lang) => (
             <DropdownItem
               key={lang.country_code}
               language={lang.country_code}
@@ -54,7 +57,7 @@ const LanguageSelector: React.FC = () => {
         </ul>
       )}
     </div>
-  )
+  );
 }
 
 export default LanguageSelector
