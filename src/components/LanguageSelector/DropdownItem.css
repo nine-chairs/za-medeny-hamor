@@ -3,10 +3,10 @@
 .dropdownItem {
   cursor: pointer;
   padding: 8px 16px; /* Adjust padding according to your design */
-  color: white;
-  background-color: #333; /* Set the background color as needed */
+  color: black;
+  /*background-color: cyan; /* Set the background color as needed */
 }
 
 .dropdownItem:hover {
-  background-color: #555; /* Change the background color on hover if desired */
+  background-color: cyan; /* Change the background color on hover if desired */
 }

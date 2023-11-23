@@ -9,9 +9,11 @@ const Navbar = () => {
   const { t } = useTranslation()
   return (
     <nav>
-      <Link to='/' className='title'>
-        za! medený hámor
-      </Link>
+      <div className='logo'>
+        <Link to='/' className='title'>
+          za! medený hámor
+        </Link>
+      </div>
       <div
         className='menu'
         onClick={() => {
@@ -38,10 +40,9 @@ const Navbar = () => {
         <li>
           <NavLink to='/contact'>{t('title_contact')}</NavLink>
         </li>
-
-        <LanguageSelector />
       </ul>
-
+      <div className="vertical-line"></div>
+      <LanguageSelector />
     </nav>
   )
 }

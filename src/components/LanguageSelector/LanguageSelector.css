@@ -1,32 +1,37 @@
-.dropdown-menu{
-  position: absolute;
-  top: 100px;
-  right: 20px;
-  background-color: pink;
-  border-radius: 30;
-  padding: 10px 20px;
-  width: 200px;
+/* Add these styles to your existing stylesheet or create a new one */
+
+.languageSelector {
+  position: relative;
 }
 
-.dropdown-menu.active{
-  opacity: 1;
-  visibility: visible;
-  transform: translateY(0);
-}
-
-.dropdown-menu.active{
-  opacity: 0;
-  visibility: hidden;
-  transform: translateY(-20px);
-}
-
-.dropdown-menu ul li {
-  padding: 10px 0;
-  border-top: 1px solid black;
-}
-
-.dropdown-menu ul li:hover {
-  color: aquamarine;
+.dropdownToggle {
   cursor: pointer;
+  display: flex;
+  align-items: center; /* Vertically center the content */
+  margin-right: 30px; /* Right margin of 30px */
+  padding: 10px; /* Add padding as needed */
+  /* Add any other styles you need for the dropdownToggle */
 }
 
+.dropdownMenu {
+  position: absolute;
+  top: 100%; /* Position the dropdown below the dropdownToggle */
+  right: 30px; /* Align the right edge of the dropdown with the right edge of the dropdownToggle */
+  background-color: #fff; /* Background color for the dropdown menu */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add a subtle box shadow for a dropdown effect */
+  list-style: none;
+  padding: 0; /* Remove default padding */
+  margin: 8px 0 0 0; /* Add margin as needed */
+  display: flex;
+  flex-direction: column; /* Align the dropdown items vertically */
+  align-items: flex-start; /* Align items to the start of the column */
+}
+
+.dropdownItem {
+  /* Styles for individual dropdown items go here */
+  cursor: pointer;
+  padding: 8px;
+  border-bottom: 1px solid #ddd; /* Optional: Add a border between items */
+}
+
+/* Additional styles for DropdownItem can be added in its own CSS file or here */
