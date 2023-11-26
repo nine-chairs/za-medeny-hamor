@@ -1,21 +1,47 @@
 .active {
-    background-color: cyan;
+    background-color:white;
 }
 
 nav {
     display: flex;
-    justify-content:flex-end;
-    align-items: center;
-    background-color: pink;
+    justify-content:space-between;
+    align-items:flex-start;
     position: sticky;
+    background-image: linear-gradient(to bottom, #FFD6B1, rgba(255, 255, 255, 0));
     top: 0;
 }
 
+.logoContainer {
+    display: flex;
+    justify-content:flex-start;
+    align-items: center;
+    background-color: white;
+    position: sticky;
+    border-radius: 2500px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-left: 30px;
+   
+}
+
 .logo {
+    width: 200px;
+}
+
+.navItemsContainer {
+    display: flex;
+    justify-content:flex-end;
+    align-items: center;
+    /* background-color: pink; */
+    position: sticky;
+    margin-top: 50px;
+}
+
+/* .logo {
     background-color: bisque;
     display: flex;
     justify-content: flex-start;
-}
+} */
 
 nav .title {
     
