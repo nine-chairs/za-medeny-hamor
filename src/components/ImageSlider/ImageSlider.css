@@ -1,0 +1,42 @@
+/* styles.css or your preferred file name */
+
+.image-slider {
+  position: relative;
+}
+
+.image-slider button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: transparent;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  color: black; /* Adjust the color as needed */
+  opacity: 0; /* Initially hide the button */
+  transition: opacity 0.3s ease; /* Add a smooth transition effect */
+  border-radius: 50%; /* Make the background circular */
+}
+
+.image-slider:hover button {
+  opacity: 1; /* Make the button visible on hover */
+}
+
+.image-slider button.left-arrow {
+  left: 10px;
+  background-color: white; /* White circular background */
+  padding: 10px; /* Adjust padding as needed */
+}
+
+.image-slider button.right-arrow {
+  right: 60px; /* Adjust the right position to 60px */
+  background-color: white; /* White circular background */
+  padding: 10px; /* Adjust padding as needed */
+}
+
+.image-slider button.pause-resume {
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: white; /* White circular background */
+  padding: 10px; /* Adjust padding as needed */
+}
