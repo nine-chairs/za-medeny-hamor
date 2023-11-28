@@ -9,6 +9,7 @@ const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false)
   const { t } = useTranslation()
   return (
+
     <nav>
       <div className='logoContainer'>
         <Link to='/' className='title'>
@@ -47,7 +48,11 @@ const Navbar = () => {
         <LanguageSelector />
       </div>
 
+
     </nav>
+
+
+
   )
 }
 

@@ -14,26 +14,41 @@ const Home = () => {
   const images: string[] = [image1, image2, image3, image4, image5, image6]
 
   return (
-    <div>
-      <div className='homeContainer'>
-        <div className='textContainer'>
-          <h1 className='text'>
+    <div >
+      <div className='gradientLayer'></div>
+
+
+      <div className='topContainer'>
+        <div className='primaryTextContainer'>
+          <h1 >
             {t('home_text1_500years')}
           </h1>
-        </div>
-        <div>
-          {t('home_text2_namibia')}
-        </div>
-        <div>
-          {t('home_text3_imagine')}
-        </div>
-        <div>
-          {t('home_text4_revitalize')}
         </div>
         <div className='photoContainer'>
           <ImageSlider images={images} />
         </div>
       </div>
+
+      <div className='bottomContainer'>
+        <div className='secondaryTextContainer'>
+          <h2>
+            {t('home_text2_namibia')}
+          </h2>
+          <br />
+          <h3>
+            {t('home_text3_imagine')}
+          </h3>
+
+        </div>
+
+        <div className='tertiaryTextContainer'>
+          <h1>
+            {t('home_text4_revitalize')}
+          </h1>
+        </div>
+
+      </div>
+
     </div>
   )
 }
