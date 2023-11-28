@@ -1,8 +1,24 @@
 {
-  "welcome_to_react": "Hallo Leute Kommt rein",
   "title_about": "Über Uns",
-  "title_medeny_hamor": "Medený Hámor",
+  "title_medeny_hamor": "Der Kupferhammer",
   "title_news": "Newsletter",
   "title_support": "Unterstützung",
-  "title_contact": "Kontakt"
+  "title_contact": "Kontakt",
+
+  "home_text1_500years": "Der Kupferhammer als industrielles Juwel ist eine der letzten materiellen Spuren einer über 500-jährigen Bergbau- und Hüttenhistorie von Banská Bystrica. Obwohl diese Stadt einst zusammen mit der gesamten Region weltweit bedeutend war.",
+  "home_text2_namibia": "Als sie vor ein paar Jahren das 500 Jahre alte Wrack eines portugiesischen Schiffes in Namibia fanden, enthielt es etwa 22 Tonnen Kupfer, das nachweislich aus der zwölftausend Kilometer entfernten Kupferhütte in Banská Bystrica stammte. Unglaublich, oder?",
+  "home_text3_imagine": "Heutzutage kann sich kaum jemand vorstellen, dass der Kupferhammer ein bedeutender Ort für die Produktion von Weltkupfer war, das praktisch über europäische Häfen in die ganze Welt exportiert wurde. Die Kupfermanufaktur, die sich heute in einem verfallenden Gelände befindet, war 500 Jahre lang ununterbrochen in Betrieb. In der Slowakei gibt es nur wenige Orte, die in ihrer industriellen Geschichte ähnlich bedeutsam waren. Trotzdem verfällt dieses technische Denkmal von unschätzbarem Wert seit Jahren.",
+  "home_text4_revitalize": "Wie könnte ein Zeuge der fernen Vergangenheit wieder zum Leben erweckt werden?",
+
+  "about_sub_title_vision": "Beschreibung, Ziele, Vision",
+  "about_sub_title_we_are": "Wer sind wir",
+  "about_sub_title_we_propose": "Was wir vorschlagen",
+  "about_sub_title_our_activities": "Unsere Aktivitäten",
+  "about_sub_title_media": "Aus den Medien",
+
+  "hamor_sub_title_history": "Geschichte",
+  "hamor_sub_title_present": "Gegenwart",
+  "hamor_sub_title_future": "Inspiration für die Zukunft",
+  "hamor_sub_title_participation": "Partizipation der Öffentlichkeit",
+  "hamor_sub_title_recommendation": "Wir empfehlen"
 }

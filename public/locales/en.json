@@ -1,23 +1,24 @@
 {
-  "welcome_to_react": "welcome to medeny hamor",
   "title_about": "About",
-  "title_medeny_hamor": "Medený Hámor",
+  "title_medeny_hamor": "The Copper Hammer",
   "title_news": "News",
   "title_support": "Support",
   "title_contact": "Contact",
 
-  "about_sub_title_vision": "Opis, ciele, vízia",
-  "about_sub_title_we_are": "Kto sme",
-  "about_sub_title_we_propose": "Čo navrhujeme",
-  "about_sub_title_our_activities": "Naše Aktivity",
-  "about_sub_title_media": "Z médií",
+  "home_text1_500years": "The Copper Hammer, as an industrial gem, is one of the last tangible traces of over 500 years of mining and metallurgical history in Banska Bystrica, although it, along with the entire region, was once globally significant.",
+  "home_text2_namibia": "A few years ago, when they found a 500-year-old wreck of a Portuguese ship in Namibia, it contained approximately 22 tons of copper, demonstrably originating from the twelve thousand kilometers distant copperworks of Banská Bystrica. Unbelievable, isn't it?",
+  "home_text3_imagine": "Today, few can imagine that the Copper Hammer was a significant hub for the production of global copper, which was exported through European ports to practically the entire world. The copper manufacturing facility, located in a now dilapidated area, operated continuously for a whole 500 years. In Slovakia, there are few places with industrial histories similarly significant. Nevertheless, this technically invaluable monument has been deteriorating for years.",
+  "home_text4_revitalize": "How could a witness of the distant past come to life?",
 
-  "hamor_sub_title_history": "História",
-  "about_sub_title_present": "Súčasnosť",
-  "about_sub_title_future": "Inšpirácia pre budúcnosť",
-  "about_sub_title_participation": "Participácia s verejnosťou",
-  "about_sub_title_recommendation": "Odporúčame"
+  "about_sub_title_vision": "Description, goals, vision",
+  "about_sub_title_we_are": "Who are we",
+  "about_sub_title_we_propose": "What we propose",
+  "about_sub_title_our_activities": "Our activities",
+  "about_sub_title_media": "From the media",
 
-
-
+  "hamor_sub_title_history": "History",
+  "hamor_sub_title_present": "Present",
+  "hamor_sub_title_future": "Inspiration for the future",
+  "hamor_sub_title_participation": "Participation with the public",
+  "hamor_sub_title_recommendation": "We recommend"
 }

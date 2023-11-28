@@ -1,15 +1,19 @@
 {
-  "welcome_to_react": "ludia vitajte vitajte posadte sa",
   "title_about": "O nás",
   "title_medeny_hamor": "Medený Hámor",
   "title_news": "Aktuality",
   "title_support": "Podporte Nás",
   "title_contact": "Kontakt",
 
+  "home_text1_500years": "Medený hámor ako industriálny klenot je jednou z posledných hmotných stôp viac ako 500-ročnej banskej a hutníckej histórie Banskej Bystrice, hoci tá bola spolu s celým regiónom kedysi svetovo významnou.",
+  "home_text2_namibia": "Keď pred pár rokmi našli v Namíbii 500-ročný vrak portugalskej lode, nachádzalo sa v ňom približne 22 ton medi, ktorý dokázateľne pochádzala z dvanásťtisíc kilometrov vzdialeného Banskobystrického mediarskeho podniku. Neuveriteľné, však?",
+  "home_text3_imagine": "Dnes si to už málokto vie predstaviť, že Medený hámor bol významným miestom produkcie svetovej medi, ktorá sa cez európske prístavy vyvážala prakticky do celého sveta. Manufaktúra na výrobu medi, ktorá sídlila v dnes chátrajúcom areáli, bola v prevádzke nepretržite celých 500 rokov. Na Slovensku je málo miest, ktoré by svojou industriálnou históriou boli podobne významné. Napriek tomu táto technická pamiatka nesmiernej hodnoty už roky chátra.",
+  "home_text4_revitalize": "Ako by svedok dávnej minulosti mohol ožiť?",
+
   "about_sub_title_vision": "Opis, ciele, vízia",
   "about_sub_title_we_are": "Kto sme",
   "about_sub_title_we_propose": "Čo navrhujeme",
-  "about_sub_title_our_activities": "Naše Aktivity",
+  "about_sub_title_our_activities": "Naše aktivity",
   "about_sub_title_media": "Z médií",
 
   "hamor_sub_title_history": "História",
@@ -17,5 +21,4 @@
   "hamor_sub_title_future": "Inšpirácia pre budúcnosť",
   "hamor_sub_title_participation": "Participácia s verejnosťou",
   "hamor_sub_title_recommendation": "Odporúčame"
-
 }
