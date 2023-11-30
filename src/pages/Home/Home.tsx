@@ -15,9 +15,6 @@ const Home = () => {
 
   return (
     <div >
-      <div className='gradientLayer'></div>
-
-
       <div className='topContainer'>
         <div className='primaryTextContainer'>
           <h1 >

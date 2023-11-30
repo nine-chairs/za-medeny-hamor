@@ -1,13 +1,13 @@
-.gradientLayer {
+/* .gradientLayer {
   width: 100%;
-  height: 300px; /* Adjust the height as needed */
+  height: 300px; 
   position: sticky;
   background-image: linear-gradient(to bottom, #FFD6B1, rgba(255, 255, 255, 0));
-  top: 150px; /* Height of the nav element */
-  z-index: -1; /* Set a higher z-index value to keep it above other elements */
-}
+  top: 150px; 
+  z-index: -1; 
+} */
 
-.text{
+/* .text{
   position: relative;
   z-index: -2;
-}
+} */

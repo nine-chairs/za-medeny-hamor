@@ -6,7 +6,6 @@ const News = () => {
   const { t } = useTranslation()
   return (
     <div>
-      <div className='gradientLayer'></div>
       <div className='text'>
         <h1>{t('title_news')}</h1>
         <div>
