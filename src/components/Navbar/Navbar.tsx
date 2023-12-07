@@ -40,6 +40,9 @@ const Navbar = () => {
               <NavLink to='/news'>{t('title_news')}</NavLink>
             </li>
             <li>
+              <NavLink to='/photogallery'>{t('title_photo_gallery')}</NavLink>
+            </li>
+            <li>
               <NavLink to='/support'>{t('title_support')}</NavLink>
             </li>
             <li>

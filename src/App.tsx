@@ -6,9 +6,11 @@ import Navbar from './components/Navbar/Navbar'
 import Home from './pages/Home/Home'
 import About from './pages/About/About'
 import MedenyHamor from './pages/MedenyHamor/MedenyHamor'
-import Support from './pages/Support/Support'
 import News from './pages/News/News'
+import PhotoGallery from './pages/PhotoGallery/PhotoGallery'
+import Support from './pages/Support/Support'
 import Contact from './pages/Contact/Contact'
+
 
 const App: React.FC = () => {
   return (
@@ -21,6 +23,7 @@ const App: React.FC = () => {
           <Route path="/about" element={<About />} />
           <Route path="/medeny_hamor" element={<MedenyHamor />} />
           <Route path="/news" element={<News />} />
+          <Route path="/photogallery" element={<PhotoGallery />} />
           <Route path="/support" element={<Support />} />
           <Route path="/contact" element={<Contact />} />
         </Routes>

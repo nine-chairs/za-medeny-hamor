@@ -22,7 +22,7 @@ const Home = () => {
           </h1>
         </div>
         <div className='photoContainer'>
-          <ImageSlider images={images} />
+          {/* <ImageSlider images={images} /> */}
         </div>
       </div>
 
